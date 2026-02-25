@@ -18,7 +18,7 @@
                     fontFamily: { sans: ['Inter', 'sans-serif'] },
                     colors: {
                         brand: { dark: '#0f172a', accent: '#f59e0b', blue: '#0ea5e9' },
-                        whatsapp: '#25D366' // WhatsApp Grün
+                        whatsapp: '#25D366'
                     }
                 }
             }
@@ -28,8 +28,20 @@
     <style>
         body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #1e293b; }
         .gradient-text { background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .clean-card { background: #ffffff; border: 1px solid #e2e8f0; box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05); transition: all 0.3s ease; }
+        
+        /* Card: text-center und flex-col für Zentrierung hinzugefügt */
+        .clean-card { 
+            background: #ffffff; 
+            border: 1px solid #e2e8f0; 
+            box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05); 
+            transition: all 0.3s ease; 
+            text-align: center; /* Text mittig */
+            display: flex;      /* Flexbox */
+            flex-direction: column; /* Vertikal stapeln */
+            align-items: center; /* Horizontal mittig */
+        }
         .clean-card:hover { box-shadow: 0 20px 40px -5px rgba(0, 0, 0, 0.1); transform: translateY(-5px); border-color: #f59e0b; }
+        
         .blob { position: absolute; border-radius: 50%; filter: blur(80px); opacity: 0.2; z-index: 0; animation: float 20s infinite alternate; }
         @keyframes float { 0% { transform: translate(0, 0) scale(1); } 100% { transform: translate(30px, -30px) scale(1.1); } }
         .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease; }
@@ -129,7 +141,6 @@
             box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
             color: white;
         }
-        /* Puls Animation */
         .whatsapp-pulse {
             animation: pulse-wa 2s infinite;
         }
@@ -276,7 +287,7 @@
         </div>
     </section>
 
-    <!-- Leistungen -->
+    <!-- Leistungen (Icons & Text jetzt mittig) -->
     <section id="leistungen" class="py-24 px-6 bg-gray-50">
         <div class="max-w-6xl mx-auto">
             <div class="text-center mb-16 reveal">
@@ -285,6 +296,7 @@
             </div>
             
             <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
                 <div class="clean-card p-8 rounded-2xl reveal">
                     <div class="w-14 h-14 bg-amber-50 rounded-xl flex items-center justify-center mb-6">
                         <svg class="w-7 h-7 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
@@ -293,6 +305,7 @@
                     <p class="text-gray-500 leading-relaxed text-sm">Kompletträumungen für Erben, Umzug ins Pflegeheim oder Immobilienverkauf.</p>
                 </div>
                 
+                <!-- Card 2 -->
                 <div class="clean-card p-8 rounded-2xl reveal" style="transition-delay: 100ms;">
                     <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center mb-6">
                         <svg class="w-7 h-7 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
@@ -301,6 +314,7 @@
                     <p class="text-gray-500 leading-relaxed text-sm">Räumung von Mietwohnungen in Frankfurt und Hanau. Ideal für Vermieter.</p>
                 </div>
                 
+                <!-- Card 3 -->
                 <div class="clean-card p-8 rounded-2xl reveal" style="transition-delay: 200ms;">
                     <div class="w-14 h-14 bg-green-50 rounded-xl flex items-center justify-center mb-6">
                         <svg class="w-7 h-7 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path></svg>
