@@ -3,7 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO META TAGS -->
     <title>EasyExit Entrümpelung | Hausauflösung Frankfurt, Hanau & Umgebung</title>
+    <meta name="description" content="Professionelle Entrümpelung & Hausauflösung in Frankfurt, Hanau und Umgebung. Festpreisgarantie, besenreine Übergabe & schnelle Termine. Jetzt kostenlos anfragen!">
+    <meta name="keywords" content="Entrümpelung Frankfurt, Hausauflösung Hanau, Wohnungsauflösung Maintal, Entrümpelung Offenbach, Sperrmüllentsorgung">
+    <meta name="author" content="EasyExit Entrümpelung">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph (Social Media Preview) -->
+    <meta property="og:title" content="EasyExit Entrümpelung - Ihr Partner in Frankfurt & Hanau">
+    <meta property="og:description" content="Wir entrümpeln Ihre Wohnung oder Haus besenrein zum Festpreis.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.easyexit-entruempelung.de">
+    <meta property="og:image" content="https://z-cdn-media.chatglm.cn/files/bd64a446-3211-4d4e-9ca7-56b7e5cfdce3.jpg">
     
     <!-- Fonts & Tailwind -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,16 +42,15 @@
         body { font-family: 'Inter', sans-serif; background-color: #ffffff; color: #1e293b; }
         .gradient-text { background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         
-        /* Card: text-center und flex-col für Zentrierung hinzugefügt */
         .clean-card { 
             background: #ffffff; 
             border: 1px solid #e2e8f0; 
             box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05); 
             transition: all 0.3s ease; 
-            text-align: center; /* Text mittig */
-            display: flex;      /* Flexbox */
-            flex-direction: column; /* Vertikal stapeln */
-            align-items: center; /* Horizontal mittig */
+            text-align: center; 
+            display: flex;      
+            flex-direction: column; 
+            align-items: center; 
         }
         .clean-card:hover { box-shadow: 0 20px 40px -5px rgba(0, 0, 0, 0.1); transform: translateY(-5px); border-color: #f59e0b; }
         
@@ -55,9 +67,16 @@
             box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
             cursor: ew-resize;
             user-select: none;
+            /* Responsive Höhe: Handy 350px, Desktop 500px */
+            height: 350px;
         }
+        @media (min-width: 768px) {
+            .ba-slider { height: 500px; }
+        }
+
         .ba-img {
             display: block;
+            width: 100%;
             height: 100%;
             object-fit: cover;
             object-position: center;
@@ -107,25 +126,27 @@
             padding: 8px 16px;
             background: rgba(0,0,0,0.6);
             color: white;
-            font-size: 14px;
+            font-size: 12px;
             font-weight: 600;
             border-radius: 20px;
             backdrop-filter: blur(4px);
             z-index: 5;
             pointer-events: none;
         }
+        @media (min-width: 768px) { .ba-label { font-size: 14px; } }
+        
         .ba-label.before { left: 20px; }
         .ba-label.after { right: 20px; z-index: 1; }
 
         /* --- WHATSAPP FLOATING BUTTON --- */
         .whatsapp-float {
             position: fixed;
-            bottom: 30px;
-            right: 30px;
+            bottom: 20px; /* Etwas weniger Abstand auf Handy */
+            right: 20px;
             background-color: #25D366;
             color: white;
-            width: 60px;
-            height: 60px;
+            width: 55px;
+            height: 55px;
             border-radius: 50%;
             text-align: center;
             box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
@@ -133,8 +154,11 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 30px;
+            font-size: 28px;
             transition: all 0.3s ease;
+        }
+        @media (min-width: 768px) {
+            .whatsapp-float { bottom: 30px; right: 30px; width: 60px; height: 60px; font-size: 30px; }
         }
         .whatsapp-float:hover {
             transform: scale(1.1);
@@ -150,31 +174,61 @@
             100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
         }
     </style>
+
+    <!-- JSON-LD Structured Data (WICHTIG für Google Ranking) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MovingCompany",
+      "name": "EasyExit Entrümpelung",
+      "image": "https://z-cdn-media.chatglm.cn/files/bd64a446-3211-4d4e-9ca7-56b7e5cfdce3.jpg",
+      "telephone": "+49-6109-123456",
+      "email": "info@easyexit.de",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Musterstraße 12",
+        "addressLocality": "Maintal",
+        "postalCode": "63477",
+        "addressCountry": "DE"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 50.0091,
+        "longitude": 8.8159
+      },
+      "url": "https://www.easyexit-entruempelung.de",
+      "areaServed": ["Frankfurt am Main", "Hanau", "Maintal", "Offenbach", "Main-Kinzig-Kreis"],
+      "priceRange": "€€",
+      "openingHours": "Mo-Sa 08:00-18:00"
+    }
+    </script>
 </head>
 <body class="antialiased">
 
     <!-- Navbar -->
-    <nav class="fixed top-0 left-0 right-0 z-50 h-20 flex items-center px-6 lg:px-12 bg-white/80 backdrop-blur-lg border-b border-gray-100">
+    <nav class="fixed top-0 left-0 right-0 z-50 h-20 flex items-center px-4 lg:px-12 bg-white/80 backdrop-blur-lg border-b border-gray-100">
         <div class="max-w-7xl mx-auto w-full flex justify-between items-center">
-            <div class="flex items-center gap-3">
-                <div class="w-10 h-10 rounded-lg bg-brand-dark flex items-center justify-center">
-                    <svg class="w-6 h-6 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path></svg>
+            <div class="flex items-center gap-2 md:gap-3">
+                <div class="w-9 h-9 md:w-10 md:h-10 rounded-lg bg-brand-dark flex items-center justify-center">
+                    <svg class="w-5 h-5 md:w-6 md:h-6 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path></svg>
                 </div>
                 <div>
-                    <span class="text-xl font-bold text-brand-dark">Easy<span class="text-brand-accent">Exit</span></span>
-                    <span class="block text-xs text-gray-400 -mt-1 tracking-wide">ENTRÜMPELUNG</span>
+                    <span class="text-lg md:text-xl font-bold text-brand-dark">Easy<span class="text-brand-accent">Exit</span></span>
+                    <span class="hidden sm:block text-xs text-gray-400 -mt-1 tracking-wide">ENTRÜMPELUNG</span>
                 </div>
             </div>
             
+            <!-- Desktop Menu -->
             <div class="hidden md:flex items-center gap-8">
                 <a href="#leistungen" class="text-sm text-gray-600 hover:text-brand-dark transition font-medium">Leistungen</a>
                 <a href="#vergleich" class="text-sm text-gray-600 hover:text-brand-dark transition font-medium">Vorher/Nachher</a>
                 <a href="#gebiet" class="text-sm text-gray-600 hover:text-brand-dark transition font-medium">Einzugsgebiet</a>
             </div>
             
-            <a href="tel:+496123456789" class="hidden sm:flex items-center gap-2 bg-brand-accent hover:bg-amber-500 text-white font-semibold px-5 py-2.5 rounded-full text-sm transition shadow-lg shadow-amber-500/20">
+            <!-- Call Button -->
+            <a href="tel:+496123456789" class="flex items-center gap-1 md:gap-2 bg-brand-accent hover:bg-amber-500 text-white font-semibold px-4 py-2 md:px-5 md:py-2.5 rounded-full text-xs md:text-sm transition shadow-lg shadow-amber-500/20">
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
-                Anrufen
+                <span class="hidden sm:inline">Anrufen</span>
             </a>
         </div>
     </nav>
@@ -184,19 +238,19 @@
         <div class="blob w-96 h-96 bg-brand-accent top-10 -left-20"></div>
         <div class="blob w-80 h-80 bg-brand-blue bottom-20 right-10"></div>
         
-        <div class="relative z-10 max-w-7xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-12 items-center">
+        <div class="relative z-10 max-w-7xl mx-auto px-4 py-12 lg:py-20 lg:grid lg:grid-cols-2 gap-12 items-center">
             <div class="text-center lg:text-left">
-                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 bg-white/5 text-sm text-gray-300 mb-6">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 bg-white/5 text-xs md:text-sm text-gray-300 mb-6">
                     <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span>
                     Ihr Partner in Frankfurt, Hanau & Umgebung
                 </div>
                 
-                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
+                <h1 class="text-3xl sm:text-4xl lg:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
                     Entrümpelungen<br>
                     <span class="gradient-text">Ohne Stress. Sauber.</span>
                 </h1>
                 
-                <p class="text-lg text-gray-300 max-w-xl mx-auto lg:mx-0 mb-8 leading-relaxed">
+                <p class="text-base md:text-lg text-gray-300 max-w-xl mx-auto lg:mx-0 mb-8 leading-relaxed">
                     Wir lösen Wohnungen & Häuser professionell auf. Ob Frankfurt-Sachsenhausen oder Hanau-Innenstadt – Wir übernehmen das Heben, Tragen und Entsorgen.
                 </p>
                 
@@ -227,42 +281,42 @@
         </div>
     </section>
 
-    <!-- USP Bar -->
-    <section class="py-8 bg-gray-50 border-b border-gray-100">
-        <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-            <div class="flex flex-col items-center gap-2">
-                <span class="text-sm font-semibold text-gray-500 uppercase tracking-wider">Preis</span>
-                <p class="text-brand-dark font-bold">Festpreis-Angebot</p>
+    <!-- USP Bar (Optimized for Mobile) -->
+    <section class="py-6 md:py-8 bg-gray-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 text-center">
+            <div class="flex flex-col items-center gap-1 md:gap-2">
+                <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Preis</span>
+                <p class="text-brand-dark font-bold text-sm md:text-base">Festpreis-Angebot</p>
             </div>
-            <div class="flex flex-col items-center gap-2">
-                <span class="text-sm font-semibold text-gray-500 uppercase tracking-wider">Service</span>
-                <p class="text-brand-dark font-bold">Besenreine Übergabe</p>
+            <div class="flex flex-col items-center gap-1 md:gap-2">
+                <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Service</span>
+                <p class="text-brand-dark font-bold text-sm md:text-base">Besenreine Übergabe</p>
             </div>
-            <div class="flex flex-col items-center gap-2">
-                <span class="text-sm font-semibold text-gray-500 uppercase tracking-wider">Umwelt</span>
-                <p class="text-brand-dark font-bold">Zertifizierte Entsorgung</p>
+            <div class="flex flex-col items-center gap-1 md:gap-2">
+                <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Umwelt</span>
+                <p class="text-brand-dark font-bold text-sm md:text-base">Zertifizierte Entsorgung</p>
             </div>
-            <div class="flex flex-col items-center gap-2">
-                <span class="text-sm font-semibold text-gray-500 uppercase tracking-wider">Zeit</span>
-                <p class="text-brand-dark font-bold">Termine innerhalb 48h</p>
+            <div class="flex flex-col items-center gap-1 md:gap-2">
+                <span class="text-xs font-semibold text-gray-500 uppercase tracking-wider">Zeit</span>
+                <p class="text-brand-dark font-bold text-sm md:text-base">Termine innerhalb 48h</p>
             </div>
         </div>
     </section>
 
     <!-- VORHER / NACHHER SLIDER SECTION -->
-    <section id="vergleich" class="py-24 px-6 bg-white">
+    <section id="vergleich" class="py-16 md:py-24 px-4 bg-white">
         <div class="max-w-5xl mx-auto text-center">
-            <div class="mb-12 reveal">
+            <div class="mb-8 md:mb-12 reveal">
                 <span class="text-brand-accent text-sm font-semibold uppercase tracking-wider">Der Beweis</span>
-                <h2 class="text-3xl sm:text-4xl font-bold mt-4 text-brand-dark">Sehen Sie den Unterschied</h2>
-                <p class="text-gray-500 mt-4">Schieben Sie den Regler, um das Ergebnis zu sehen.</p>
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mt-4 text-brand-dark">Sehen Sie den Unterschied</h2>
+                <p class="text-gray-500 mt-4 text-sm md:text-base">Schieben Sie den Regler, um das Ergebnis zu sehen.</p>
             </div>
 
-            <div class="ba-slider reveal" style="height: 500px;" id="comparison-slider">
+            <div class="ba-slider reveal" id="comparison-slider">
                 
                 <!-- 1. AFTER IMAGE -->
                 <div class="ba-after">
-                    <img src="https://z-cdn-media.chatglm.cn/files/bd64a446-3211-4d4e-9ca7-56b7e5cfdce3.jpg?auth_key=1872012437-5c9d13bfb73a4a2e89156e2aeddd0cb9-0-dfabc40f435d7e675b2b7c1e5664b66a" alt="Nachher - Sauberer Raum" class="ba-img" style="width: 100%;">
+                    <img src="https://z-cdn-media.chatglm.cn/files/bd64a446-3211-4d4e-9ca7-56b7e5cfdce3.jpg?auth_key=1872012437-5c9d13bfb73a4a2e89156e2aeddd0cb9-0-dfabc40f435d7e675b2b7c1e5664b66a" alt="Nachher - Sauberer Raum" class="ba-img">
                 </div>
                 <span class="ba-label after">NACHHER</span>
 
@@ -287,77 +341,77 @@
         </div>
     </section>
 
-    <!-- Leistungen (Icons & Text jetzt mittig) -->
-    <section id="leistungen" class="py-24 px-6 bg-gray-50">
+    <!-- Leistungen -->
+    <section id="leistungen" class="py-16 md:py-24 px-4 bg-gray-50">
         <div class="max-w-6xl mx-auto">
-            <div class="text-center mb-16 reveal">
+            <div class="text-center mb-12 md:mb-16 reveal">
                 <span class="text-brand-accent text-sm font-semibold uppercase tracking-wider">Unsere Leistungen</span>
-                <h2 class="text-3xl sm:text-4xl font-bold mt-4 text-brand-dark">Vom Keller bis zum kompletten Haus</h2>
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mt-4 text-brand-dark">Vom Keller bis zum kompletten Haus</h2>
             </div>
             
-            <div class="grid md:grid-cols-3 gap-8">
+            <div class="grid md:grid-cols-3 gap-6 md:gap-8">
                 <!-- Card 1 -->
-                <div class="clean-card p-8 rounded-2xl reveal">
+                <div class="clean-card p-6 md:p-8 rounded-2xl reveal">
                     <div class="w-14 h-14 bg-amber-50 rounded-xl flex items-center justify-center mb-6">
                         <svg class="w-7 h-7 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path></svg>
                     </div>
-                    <h3 class="text-xl font-bold mb-3 text-brand-dark">Hausauflösung</h3>
-                    <p class="text-gray-500 leading-relaxed text-sm">Kompletträumungen für Erben, Umzug ins Pflegeheim oder Immobilienverkauf.</p>
+                    <h3 class="text-lg md:text-xl font-bold mb-3 text-brand-dark">Hausauflösung</h3>
+                    <p class="text-gray-500 leading-relaxed text-xs md:text-sm">Kompletträumungen für Erben, Umzug ins Pflegeheim oder Immobilienverkauf.</p>
                 </div>
                 
                 <!-- Card 2 -->
-                <div class="clean-card p-8 rounded-2xl reveal" style="transition-delay: 100ms;">
+                <div class="clean-card p-6 md:p-8 rounded-2xl reveal" style="transition-delay: 100ms;">
                     <div class="w-14 h-14 bg-blue-50 rounded-xl flex items-center justify-center mb-6">
                         <svg class="w-7 h-7 text-brand-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
                     </div>
-                    <h3 class="text-xl font-bold mb-3 text-brand-dark">Wohnungsauflösung</h3>
-                    <p class="text-gray-500 leading-relaxed text-sm">Räumung von Mietwohnungen in Frankfurt und Hanau. Ideal für Vermieter.</p>
+                    <h3 class="text-lg md:text-xl font-bold mb-3 text-brand-dark">Wohnungsauflösung</h3>
+                    <p class="text-gray-500 leading-relaxed text-xs md:text-sm">Räumung von Mietwohnungen in Frankfurt und Hanau. Ideal für Vermieter.</p>
                 </div>
                 
                 <!-- Card 3 -->
-                <div class="clean-card p-8 rounded-2xl reveal" style="transition-delay: 200ms;">
+                <div class="clean-card p-6 md:p-8 rounded-2xl reveal" style="transition-delay: 200ms;">
                     <div class="w-14 h-14 bg-green-50 rounded-xl flex items-center justify-center mb-6">
                         <svg class="w-7 h-7 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path></svg>
                     </div>
-                    <h3 class="text-xl font-bold mb-3 text-brand-dark">Keller & Dachboden</h3>
-                    <p class="text-gray-500 leading-relaxed text-sm">Schaffen Sie Platz. Wir entsorgen Sperrmüll, alte Möbel und Unrat sicher.</p>
+                    <h3 class="text-lg md:text-xl font-bold mb-3 text-brand-dark">Keller & Dachboden</h3>
+                    <p class="text-gray-500 leading-relaxed text-xs md:text-sm">Schaffen Sie Platz. Wir entsorgen Sperrmüll, alte Möbel und Unrat sicher.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Einzugsgebiet -->
-    <section id="gebiet" class="py-24 px-6 bg-brand-dark text-white">
+    <section id="gebiet" class="py-16 md:py-24 px-4 bg-brand-dark text-white">
         <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-3xl sm:text-4xl font-bold mb-6">Wir sind in Ihrer Nähe</h2>
-            <p class="text-gray-400 max-w-xl mx-auto mb-10">Unser Standort in Maintal erlaubt uns schnelle Einsätze in der gesamten Region.</p>
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-6">Wir sind in Ihrer Nähe</h2>
+            <p class="text-gray-400 max-w-xl mx-auto mb-10 text-sm md:text-base">Unser Standort in Maintal erlaubt uns schnelle Einsätze in der gesamten Region.</p>
             
-            <div class="flex flex-wrap justify-center gap-4 text-white">
-                <span class="px-4 py-2 bg-white/10 rounded-full text-sm">Frankfurt am Main</span>
-                <span class="px-4 py-2 bg-white/10 rounded-full text-sm">Hanau</span>
-                <span class="px-4 py-2 bg-white/10 rounded-full text-sm">Maintal</span>
-                <span class="px-4 py-2 bg-white/10 rounded-full text-sm">Offenbach</span>
-                <span class="px-4 py-2 bg-white/10 rounded-full text-sm">Mühlheim</span>
-                <span class="px-4 py-2 bg-white/10 rounded-full text-sm">Seligenstadt</span>
+            <div class="flex flex-wrap justify-center gap-2 md:gap-4 text-white">
+                <span class="px-3 py-2 bg-white/10 rounded-full text-xs md:text-sm">Frankfurt am Main</span>
+                <span class="px-3 py-2 bg-white/10 rounded-full text-xs md:text-sm">Hanau</span>
+                <span class="px-3 py-2 bg-white/10 rounded-full text-xs md:text-sm">Maintal</span>
+                <span class="px-3 py-2 bg-white/10 rounded-full text-xs md:text-sm">Offenbach</span>
+                <span class="px-3 py-2 bg-white/10 rounded-full text-xs md:text-sm">Mühlheim</span>
+                <span class="px-3 py-2 bg-white/10 rounded-full text-xs md:text-sm">Seligenstadt</span>
             </div>
         </div>
     </section>
 
     <!-- Kontakt -->
-    <section id="kontakt" class="py-24 px-6 bg-white">
+    <section id="kontakt" class="py-16 md:py-24 px-4 bg-white">
         <div class="max-w-6xl mx-auto text-center">
-            <h2 class="text-3xl sm:text-4xl font-bold mb-6 text-brand-dark">Bereit für freien Raum?</h2>
-            <p class="text-gray-500 max-w-xl mx-auto mb-10">Rufen Sie uns an oder schreiben Sie uns direkt über WhatsApp.</p>
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-6 text-brand-dark">Bereit für freien Raum?</h2>
+            <p class="text-gray-500 max-w-xl mx-auto mb-10 text-sm md:text-base">Rufen Sie uns an oder schreiben Sie uns direkt über WhatsApp.</p>
             
             <div class="flex flex-col sm:flex-row justify-center gap-4">
                 <!-- Telefon Button -->
-                <a href="tel:+496123456789" class="inline-flex items-center justify-center gap-3 bg-brand-accent hover:bg-amber-500 text-brand-dark font-bold px-8 py-4 rounded-full text-lg transition shadow-xl shadow-amber-500/20">
+                <a href="tel:+496123456789" class="inline-flex items-center justify-center gap-3 bg-brand-accent hover:bg-amber-500 text-brand-dark font-bold px-8 py-4 rounded-full text-base md:text-lg transition shadow-xl shadow-amber-500/20">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
                     Jetzt anrufen
                 </a>
                 
                 <!-- WhatsApp Button -->
-                <a href="https://wa.me/496123456789?text=Hallo%20EasyExit%2C%20ich%20ben%C3%B6tige%20eine%20Entr%C3%BCmpelung." target="_blank" class="inline-flex items-center justify-center gap-3 bg-whatsapp hover:bg-green-600 text-white font-bold px-8 py-4 rounded-full text-lg transition shadow-xl shadow-green-500/20">
+                <a href="https://wa.me/496123456789?text=Hallo%20EasyExit%2C%20ich%20ben%C3%B6tige%20eine%20Entr%C3%BCmpelung." target="_blank" class="inline-flex items-center justify-center gap-3 bg-whatsapp hover:bg-green-600 text-white font-bold px-8 py-4 rounded-full text-base md:text-lg transition shadow-xl shadow-green-500/20">
                     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
                     WhatsApp schreiben
                 </a>
@@ -366,7 +420,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="py-8 px-6 border-t border-gray-100 bg-gray-50 text-gray-500 text-sm">
+    <footer class="py-8 px-4 border-t border-gray-100 bg-gray-50 text-gray-500 text-xs md:text-sm">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
             <div class="font-semibold text-brand-dark">EasyExit <span class="font-normal text-gray-500">Entrümpelung</span></div>
             <div>© 2026 EasyExit. Standort: Maintal.</div>
@@ -375,7 +429,7 @@
 
     <!-- WHATSAPP FLOATING BUTTON -->
     <a href="https://wa.me/496123456789?text=Hallo%20EasyExit%2C%20ich%20ben%C3%B6tige%20eine%20Entr%C3%BCmpelung." target="_blank" class="whatsapp-float whatsapp-pulse">
-        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <svg class="w-7 h-7 md:w-8 md:h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
     </a>
 
     <!-- Scripts -->
