@@ -6,17 +6,7 @@
     
     <!-- SEO META TAGS -->
     <title>EasyExit Entrümpelung | Hausauflösung Frankfurt, Hanau & Umgebung</title>
-    <meta name="description" content="Professionelle Entrümpelung & Hausauflösung in Frankfurt, Hanau und Umgebung. Festpreisgarantie, besenreine Übergabe & schnelle Termine. Jetzt kostenlos anfragen!">
-    <meta name="keywords" content="Entrümpelung Frankfurt, Hausauflösung Hanau, Wohnungsauflösung Maintal, Entrümpelung Offenbach, Sperrmüllentsorgung">
-    <meta name="author" content="EasyExit Entrümpelung">
-    <meta name="robots" content="index, follow">
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="EasyExit Entrümpelung - Ihr Partner in Frankfurt & Hanau">
-    <meta property="og:description" content="Wir entrümpeln Ihre Wohnung oder Haus besenrein zum Festpreis.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.easyexit-entruempelung.de">
-    <meta property="og:image" content="https://z-cdn-media.chatglm.cn/files/bd64a446-3211-4d4e-9ca7-56b7e5cfdce3.jpg">
+    <meta name="description" content="Professionelle Entrümpelung & Hausauflösung in Frankfurt, Hanau und Umgebung. Festpreisgarantie, besenreine Übergabe & schnelle Termine.">
     
     <!-- Fonts & Tailwind -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -71,7 +61,7 @@
         .ba-label.before { left: 20px; }
         .ba-label.after { right: 20px; z-index: 1; }
 
-        /* --- WHATSAPP FLOATING BUTTON --- */
+        /* --- WHATSAPP & UI --- */
         .whatsapp-float { position: fixed; bottom: 20px; right: 20px; background-color: #25D366; color: white; width: 55px; height: 55px; border-radius: 50%; text-align: center; box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4); z-index: 100; display: flex; align-items: center; justify-content: center; font-size: 28px; transition: all 0.3s ease; }
         @media (min-width: 768px) { .whatsapp-float { bottom: 30px; right: 30px; width: 60px; height: 60px; font-size: 30px; } }
         .whatsapp-float:hover { transform: scale(1.1); box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6); color: white; }
@@ -163,7 +153,8 @@
             
             <div class="relative hidden lg:block">
                 <div class="absolute inset-0 bg-gradient-to-tr from-brand-accent to-brand-blue opacity-20 blur-3xl rounded-full"></div>
-                <img src="https://z-cdn-media.chatglm.cn/files/bd64a446-3211-4d4e-9ca7-56b7e5cfdce3.jpg" alt="Sauberer leerer Raum" class="relative rounded-2xl shadow-2xl border border-white/10">
+                <!-- BILD 1 (SAUBER) IM HERO -->
+                <img src="https://z-cdn-media.chatglm.cn/files/bd64a446-3211-4d4e-9ca7-56b7e5cfdce3.jpg?auth_key=1872012437-5c9d13bfb73a4a2e89156e2aeddd0cb9-0-dfabc40f435d7e675b2b7c1e5664b66a" alt="Sauberer leerer Raum" class="relative rounded-2xl shadow-2xl border border-white/10">
                 
                 <div class="absolute -bottom-6 -left-6 bg-white text-brand-dark p-6 rounded-xl shadow-xl">
                     <div class="flex items-center gap-4">
@@ -212,13 +203,16 @@
             </div>
 
             <div class="ba-slider reveal" id="comparison-slider">
+                
+                <!-- 1. AFTER IMAGE (SAUBER) -->
                 <div class="ba-after">
-                    <img src="https://z-cdn-media.chatglm.cn/files/bd64a446-3211-4d4e-9ca7-56b7e5cfdce3.jpg" alt="Nachher - Sauberer Raum" class="ba-img">
+                    <img src="https://z-cdn-media.chatglm.cn/files/bd64a446-3211-4d4e-9ca7-56b7e5cfdce3.jpg?auth_key=1872012437-5c9d13bfb73a4a2e89156e2aeddd0cb9-0-dfabc40f435d7e675b2b7c1e5664b66a" alt="Nachher - Sauberer Raum" class="ba-img">
                 </div>
                 <span class="ba-label after">NACHHER</span>
 
+                <!-- 2. BEFORE IMAGE (CHAOS) -->
                 <div class="ba-view" id="ba-view">
-                    <img src="https://z-cdn-media.chatglm.cn/files/15e6b48e-f057-4ec7-8d0e-866804ec53b1.jpg" alt="Vorher - Unordentlicher Raum" id="ba-img-before" class="ba-img">
+                    <img src="https://z-cdn-media.chatglm.cn/files/15e6b48e-f057-4ec7-8d0e-866804ec53b1.jpg?auth_key=1872012437-b391cea84c654fcca47ad86c0b8947ed-0-ac6498b8df6896dc030f807dabbcdfd3" alt="Vorher - Unordentlicher Raum" id="ba-img-before" class="ba-img">
                 </div>
                 
                 <div class="ba-handle" id="ba-handle">
@@ -227,6 +221,7 @@
                 </div>
                 
                 <span class="ba-label before">VORHER</span>
+
             </div>
         </div>
     </section>
@@ -267,7 +262,7 @@
         </div>
     </section>
 
-    <!-- NEU: TESTIMONIALS -->
+    <!-- TESTIMONIALS -->
     <section id="testimonials" class="py-16 md:py-24 px-4 bg-white">
         <div class="max-w-6xl mx-auto">
             <div class="text-center mb-12 md:mb-16 reveal">
@@ -276,7 +271,6 @@
             </div>
             
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- Testimonial 1 -->
                 <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 reveal">
                     <div class="flex text-brand-accent mb-4">
                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
@@ -285,7 +279,7 @@
                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
                     </div>
-                    <p class="text-gray-600 mb-4 text-sm italic">"Nach dem Tod meines Vaters war ich überfordert. Das Team von EasyExit hat die Wohnung in Frankfurt in einem Tag geräumt und gereinigt. Sehr diskret und professionell."</p>
+                    <p class="text-gray-600 mb-4 text-sm italic">"Nach dem Tod meines Vaters war ich überfordert. Das Team hat die Wohnung in Frankfurt in einem Tag geräumt. Sehr diskret und professionell."</p>
                     <div class="flex items-center gap-3">
                         <div class="w-10 h-10 bg-brand-dark rounded-full flex items-center justify-center text-white font-bold">S</div>
                         <div>
@@ -295,7 +289,6 @@
                     </div>
                 </div>
 
-                <!-- Testimonial 2 -->
                 <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 reveal" style="transition-delay: 100ms;">
                     <div class="flex text-brand-accent mb-4">
                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
@@ -304,7 +297,7 @@
                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
                     </div>
-                    <p class="text-gray-600 mb-4 text-sm italic">"Endlich ist der Keller leer! Termine wurden pünktlich eingehalten und der Festpreis hat gestimmt. Keine versteckten Kosten. Gerne wieder!"</p>
+                    <p class="text-gray-600 mb-4 text-sm italic">"Endlich ist der Keller leer! Termine wurden pünktlich eingehalten und der Festpreis hat gestimmt. Keine versteckten Kosten."</p>
                     <div class="flex items-center gap-3">
                         <div class="w-10 h-10 bg-brand-accent rounded-full flex items-center justify-center text-white font-bold">T</div>
                         <div>
@@ -314,7 +307,6 @@
                     </div>
                 </div>
 
-                <!-- Testimonial 3 -->
                 <div class="bg-gray-50 p-6 rounded-2xl border border-gray-100 reveal" style="transition-delay: 200ms;">
                     <div class="flex text-brand-accent mb-4">
                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
@@ -323,7 +315,7 @@
                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path></svg>
                     </div>
-                    <p class="text-gray-600 mb-4 text-sm italic">"Als Hausverwaltung arbeiten wir oft mit EasyExit zusammen. Zuverlässig, schnell und die Wohnungen sind immer sauber übergeben. Top Partner!"</p>
+                    <p class="text-gray-600 mb-4 text-sm italic">"Als Hausverwaltung arbeiten wir oft mit EasyExit zusammen. Zuverlässig, schnell und die Wohnungen sind immer sauber übergeben."</p>
                     <div class="flex items-center gap-3">
                         <div class="w-10 h-10 bg-brand-blue rounded-full flex items-center justify-center text-white font-bold">M</div>
                         <div>
@@ -336,7 +328,7 @@
         </div>
     </section>
 
-    <!-- NEU: EINZUGSGEBIET mit MAP -->
+    <!-- EINZUGSGEBIET MIT KARTE -->
     <section id="gebiet" class="py-16 md:py-24 px-4 bg-brand-dark text-white">
         <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
             <div class="reveal">
@@ -353,16 +345,23 @@
             </div>
             
             <div class="reveal">
-                <!-- MAP PLACEHOLDER -->
                 <div class="rounded-2xl overflow-hidden shadow-xl border border-white/10 h-80">
-                    <!-- HIER EIGENEN GOOGLE MAPS IFRAME EINFÜGEN -->
-                    <img src="https://z-cdn-media.chatglm.cn/files/map-placeholder.png" alt="Karte Einzugsgebiet" class="w-full h-full object-cover opacity-80">
+                    <!-- GOOGLE MAPS IFRAME (Maintal Zentriert) -->
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41088.17163652567!2d8.789570767578126!3d50.00873969999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd13b1e6b2f6b1%3A0x421e7d1a7f5c3b0!2sMaintal!5e0!3m2!1sde!2sde!4v1700000000000!5m2!1sde!2sde" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- NEU: FAQ SECTION -->
+    <!-- FAQ -->
     <section id="faq" class="py-16 md:py-24 px-4 bg-gray-50">
         <div class="max-w-3xl mx-auto">
             <div class="text-center mb-12 reveal">
@@ -371,7 +370,6 @@
             </div>
 
             <div class="reveal">
-                <!-- Item 1 -->
                 <div class="faq-item">
                     <div class="faq-question" onclick="toggleFaq(this)">
                         <h3 class="font-semibold text-brand-dark">Wie schnell könnt ihr einen Termin realisieren?</h3>
@@ -382,29 +380,26 @@
                     </div>
                 </div>
 
-                <!-- Item 2 -->
                 <div class="faq-item">
                     <div class="faq-question" onclick="toggleFaq(this)">
                         <h3 class="font-semibold text-brand-dark">Muss ich den Müll vorher sortieren?</h3>
                         <svg class="w-5 h-5 text-gray-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </div>
                     <div class="faq-answer">
-                        <p>Nein, das übernehmen wir für Sie. Wir trennen vor Ort (Möbel, Sperrmüll, Papier, Elektro) und sorgen für eine fachgerechte Entsorgung gemäß Vorschriften.</p>
+                        <p>Nein, das übernehmen wir für Sie. Wir trennen vor Ort (Möbel, Sperrmüll, Papier, Elektro) und sorgen für eine fachgerechte Entsorgung.</p>
                     </div>
                 </div>
 
-                <!-- Item 3 -->
                 <div class="faq-item">
                     <div class="faq-question" onclick="toggleFaq(this)">
                         <h3 class="font-semibold text-brand-dark">Kommen Sie auch am Wochenende?</h3>
                         <svg class="w-5 h-5 text-gray-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
                     </div>
                     <div class="faq-answer">
-                        <p>Ja, Termine an Samstagen sind bei uns möglich. Sprechen Sie uns einfach an, wir finden eine Lösung, die in Ihren Zeitplan passt.</p>
+                        <p>Ja, Termine an Samstagen sind bei uns möglich. Sprechen Sie uns einfach an, wir finden eine Lösung.</p>
                     </div>
                 </div>
 
-                <!-- Item 4 -->
                 <div class="faq-item">
                     <div class="faq-question" onclick="toggleFaq(this)">
                         <h3 class="font-semibold text-brand-dark">Wie wird der Preis berechnet?</h3>
@@ -418,14 +413,13 @@
         </div>
     </section>
 
-    <!-- NEU: KONTAKT MIT FORMULAR -->
+    <!-- KONTAKT -->
     <section id="kontakt" class="py-16 md:py-24 px-4 bg-white">
         <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 md:gap-16 items-start">
             
-            <!-- Formular -->
             <div class="bg-gray-50 p-6 md:p-8 rounded-2xl border border-gray-100 reveal">
                 <h2 class="text-2xl font-bold mb-6 text-brand-dark">Unverbindlich anfragen</h2>
-                <form action="https://formspree.io/f/DEINE_ID" method="POST">
+                <form action="#" method="POST">
                     <div class="space-y-4">
                         <div>
                             <label class="block text-sm font-medium text-gray-600 mb-1">Name</label>
@@ -452,7 +446,7 @@
                         </div>
                         <div>
                             <label class="block text-sm font-medium text-gray-600 mb-1">Nachricht</label>
-                            <textarea name="nachricht" rows="3" class="w-full bg-white border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:border-brand-accent text-sm" placeholder="z.B. "Wohnung 60qm, 3. Stock ohne Aufzug...""></textarea>
+                            <textarea name="nachricht" rows="3" class="w-full bg-white border border-gray-200 rounded-lg px-4 py-3 focus:outline-none focus:border-brand-accent text-sm" placeholder="z.B. "Wohnung 60qm, 3. Stock...""></textarea>
                         </div>
                         <button type="submit" class="w-full bg-brand-dark hover:bg-gray-800 text-white font-bold px-8 py-3 rounded-lg text-sm transition">
                             Anfrage absenden
@@ -461,11 +455,10 @@
                 </form>
             </div>
 
-            <!-- Direkter Kontakt -->
             <div class="reveal text-center md:text-left">
                 <span class="text-brand-accent text-sm font-semibold uppercase tracking-wider">Direkter Draht</span>
                 <h2 class="text-2xl sm:text-3xl font-bold mt-2 mb-6 text-brand-dark">Rufen Sie uns an</h2>
-                <p class="text-gray-500 mb-8 text-sm md:text-base">Für eine schnelle Beratung oder um einen Besichtigungstermin zu vereinbaren, rufen Sie uns an oder schreiben Sie uns.</p>
+                <p class="text-gray-500 mb-8 text-sm md:text-base">Für eine schnelle Beratung oder um einen Besichtigungstermin zu vereinbaren.</p>
                 
                 <div class="space-y-4">
                     <a href="tel:+496123456789" class="flex items-center justify-center md:justify-start gap-4 p-4 bg-white border border-gray-100 rounded-xl hover:shadow-md transition">
@@ -492,40 +485,20 @@
         </div>
     </section>
 
-    <!-- NEU: IMPRESSUM / DATENSCHUTZ (Versteckt bis zum Klick, oder als Sektion) -->
-    <section id="impressum" class="py-16 px-4 bg-white border-t border-gray-100 hidden">
-        <div class="max-w-3xl mx-auto">
-            <h2 class="text-2xl font-bold mb-4">Impressum</h2>
-            <p class="text-sm text-gray-600 mb-4">
-                <strong>Angaben gemäß § 5 TMG:</strong><br>
-                EasyExit Entrümpelung<br>
-                Max Mustermann<br>
-                Musterstraße 12<br>
-                63477 Maintal
-            </p>
-            <p class="text-sm text-gray-600">
-                <strong>Kontakt:</strong><br>
-                Telefon: 06109 / 123 456<br>
-                E-Mail: info@easyexit.de
-            </p>
-            <p class="text-xs text-gray-400 mt-8">Hinweis: Dies ist ein Platzhalter. Bitte lassen Sie dieses Impressum von einem Anwalt prüfen.</p>
-        </div>
-    </section>
-
     <!-- Footer -->
     <footer class="py-8 px-4 bg-gray-50 border-t border-gray-100 text-gray-500 text-xs md:text-sm">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
             <div class="font-semibold text-brand-dark">EasyExit <span class="font-normal text-gray-500">Entrümpelung</span></div>
             <div class="flex flex-wrap justify-center gap-4">
-                <a href="#impressum" class="hover:text-brand-dark transition">Impressum</a>
-                <a href="#datenschutz" class="hover:text-brand-dark transition">Datenschutz</a>
+                <a href="#" class="hover:text-brand-dark transition">Impressum</a>
+                <a href="#" class="hover:text-brand-dark transition">Datenschutz</a>
             </div>
             <div>© 2026 EasyExit. Standort: Maintal.</div>
         </div>
     </footer>
 
     <!-- WHATSAPP FLOATING BUTTON -->
-    <a href="https://wa.me/496123456789?text=Hallo%20EasyExit%2C%20ich%20ben%C3%B6tige%20eine%20Entr%C3%BCmpelung." target="_blank" class="whatsapp-float whatsapp-pulse">
+    <a href="https://wa.me/496123456789" target="_blank" class="whatsapp-float whatsapp-pulse">
         <svg class="w-7 h-7 md:w-8 md:h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
     </a>
 
@@ -604,10 +577,6 @@
         function toggleFaq(element) {
             const answer = element.nextElementSibling;
             const icon = element.querySelector('svg');
-            
-            // Close others (optional)
-            // document.querySelectorAll('.faq-answer').forEach(a => { if(a !== answer) a.classList.remove('active'); });
-            
             answer.classList.toggle('active');
             icon.classList.toggle('rotate-180');
         }
