@@ -68,11 +68,25 @@
         .whatsapp-pulse { animation: pulse-wa 2s infinite; }
         @keyframes pulse-wa { 0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); } 70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); } 100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); } }
 
-        /* --- FAQ ACCORDION --- */
+        /* --- FAQ & FOOTER ACCORDION --- */
         .faq-item { border-bottom: 1px solid #e2e8f0; }
         .faq-question { cursor: pointer; display: flex; justify-content: space-between; align-items: center; padding: 20px 0; }
         .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; color: #64748b; }
         .faq-answer.active { max-height: 200px; padding-bottom: 20px; }
+
+        /* Footer Legal Sections */
+        .legal-section {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-out, padding 0.5s ease-out;
+            background-color: #f8fafc;
+        }
+        .legal-section.active {
+            max-height: 1000px; /* Grosszügige Höhe */
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            border-top: 1px solid #e2e8f0;
+        }
     </style>
 
     <!-- JSON-LD Structured Data -->
@@ -99,7 +113,9 @@
     <!-- Navbar -->
     <nav class="fixed top-0 left-0 right-0 z-50 h-20 flex items-center px-4 lg:px-12 bg-white/80 backdrop-blur-lg border-b border-gray-100">
         <div class="max-w-7xl mx-auto w-full flex justify-between items-center">
-            <div class="flex items-center gap-2 md:gap-3">
+            
+            <!-- LOGO START (Link zum Seitenanfang) -->
+            <a href="#" class="flex items-center gap-2 md:gap-3">
                 <div class="w-9 h-9 md:w-10 md:h-10 rounded-lg bg-brand-dark flex items-center justify-center">
                     <svg class="w-5 h-5 md:w-6 md:h-6 text-brand-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path></svg>
                 </div>
@@ -107,7 +123,8 @@
                     <span class="text-lg md:text-xl font-bold text-brand-dark">Easy<span class="text-brand-accent">Exit</span></span>
                     <span class="hidden sm:block text-xs text-gray-400 -mt-1 tracking-wide">ENTRÜMPELUNG</span>
                 </div>
-            </div>
+            </a>
+            <!-- LOGO ENDE -->
             
             <div class="hidden md:flex items-center gap-8">
                 <a href="#leistungen" class="text-sm text-gray-600 hover:text-brand-dark transition font-medium">Leistungen</a>
@@ -153,7 +170,7 @@
             
             <div class="relative hidden lg:block">
                 <div class="absolute inset-0 bg-gradient-to-tr from-brand-accent to-brand-blue opacity-20 blur-3xl rounded-full"></div>
-                <!-- BILD 1 (SAUBER) IM HERO -->
+                <!-- BILD 1 IM HERO -->
                 <img src="https://z-cdn-media.chatglm.cn/files/bd64a446-3211-4d4e-9ca7-56b7e5cfdce3.jpg?auth_key=1872012437-5c9d13bfb73a4a2e89156e2aeddd0cb9-0-dfabc40f435d7e675b2b7c1e5664b66a" alt="Sauberer leerer Raum" class="relative rounded-2xl shadow-2xl border border-white/10">
                 
                 <div class="absolute -bottom-6 -left-6 bg-white text-brand-dark p-6 rounded-xl shadow-xl">
@@ -328,7 +345,7 @@
         </div>
     </section>
 
-    <!-- EINZUGSGEBIET MIT KARTE -->
+    <!-- EINZUGSGEBIET -->
     <section id="gebiet" class="py-16 md:py-24 px-4 bg-brand-dark text-white">
         <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
             <div class="reveal">
@@ -346,16 +363,7 @@
             
             <div class="reveal">
                 <div class="rounded-2xl overflow-hidden shadow-xl border border-white/10 h-80">
-                    <!-- GOOGLE MAPS IFRAME (Maintal Zentriert) -->
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41088.17163652567!2d8.789570767578126!3d50.00873969999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd13b1e6b2f6b1%3A0x421e7d1a7f5c3b0!2sMaintal!5e0!3m2!1sde!2sde!4v1700000000000!5m2!1sde!2sde" 
-                        width="100%" 
-                        height="100%" 
-                        style="border:0;" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d41088.17163652567!2d8.789570767578126!3d50.00873969999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd13b1e6b2f6b1%3A0x421e7d1a7f5c3b0!2sMaintal!5e0!3m2!1sde!2sde!4v1700000000000!5m2!1sde!2sde" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
@@ -364,7 +372,7 @@
     <!-- FAQ -->
     <section id="faq" class="py-16 md:py-24 px-4 bg-gray-50">
         <div class="max-w-3xl mx-auto">
-            <div class="text-center mb-12 reveal">
+            <div class="text-center mb-12 md:mb-16 reveal">
                 <span class="text-brand-accent text-sm font-semibold uppercase tracking-wider">Häufige Fragen</span>
                 <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mt-4 text-brand-dark">Wichtiges auf einen Blick</h2>
             </div>
@@ -485,13 +493,61 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- FOOTER BEREICH -->
+    
+    <!-- 1. IMPRESSUM (Aufklappbar) -->
+    <div id="impressum-section" class="legal-section px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-xl font-bold text-brand-dark mb-4">Impressum</h2>
+            <p class="text-sm text-gray-600 mb-2">
+                <strong>Angaben gemäß § 5 TMG:</strong><br>
+                EasyExit Entrümpelung<br>
+                [Dein Vorname] [Dein Nachname]<br>
+                Musterstraße 12<br>
+                63477 Maintal
+            </p>
+            <p class="text-sm text-gray-600 mb-2">
+                <strong>Kontakt:</strong><br>
+                Telefon: 06109 / 123 456<br>
+                E-Mail: info@easyexit.de
+            </p>
+            <p class="text-sm text-gray-600 mb-2">
+                <strong>Umsatzsteuer-ID:</strong><br>
+                Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: [Deine Steuernummer]
+            </p>
+            <p class="text-xs text-gray-400 mt-4">Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV: [Dein Name], Anschrift wie oben.</p>
+            <button onclick="toggleSection('impressum-section')" class="mt-6 text-xs text-brand-accent hover:underline">Schließen</button>
+        </div>
+    </div>
+
+    <!-- 2. DATENSCHUTZ (Aufklappbar) -->
+    <div id="datenschutz-section" class="legal-section px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-xl font-bold text-brand-dark mb-4">Datenschutzerklärung</h2>
+            <h3 class="font-bold text-brand-dark text-sm mt-4">1. Datenschutz auf einen Blick</h3>
+            <p class="text-xs text-gray-600 mt-2">Allgemeine Hinweise: Die Betreiber dieser Seiten nehmen den Schutz Ihrer persönlichen Daten sehr ernst. Wir behandeln Ihre personenbezogenen Daten vertraulich und entsprechend den gesetzlichen Datenschutzvorschriften sowie dieser Datenschutzerklärung.</p>
+            
+            <h3 class="font-bold text-brand-dark text-sm mt-4">2. Hinweis zur verantwortlichen Stelle</h3>
+            <p class="text-xs text-gray-600 mt-2">Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist: EasyExit Entrümpelung, Musterstraße 12, 63477 Maintal.</p>
+
+            <h3 class="font-bold text-brand-dark text-sm mt-4">3. Server-Log-Dateien</h3>
+            <p class="text-xs text-gray-600 mt-2">Unser Webserver speichert automatisch sogenannte Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. Dies sind: Browsertyp und Browserversion, verwendetes Betriebssystem, Referrer URL, Hostname des zugreifenden Rechners, Uhrzeit der Serveranfrage.</p>
+
+            <h3 class="font-bold text-brand-dark text-sm mt-4">4. Google Fonts (lokales Hosting)</h3>
+            <p class="text-xs text-gray-600 mt-2">Diese Seite nutzt zur einheitlichen Darstellung von Schriftarten so genannte Google Fonts, die von Google bereitgestellt werden. Die Google Fonts sind lokal installiert. Eine Verbindung zu Servern von Google findet dabei nicht statt.</p>
+            
+            <button onclick="toggleSection('datenschutz-section')" class="mt-6 text-xs text-brand-accent hover:underline">Schließen</button>
+        </div>
+    </div>
+
+    <!-- Footer Links -->
     <footer class="py-8 px-4 bg-gray-50 border-t border-gray-100 text-gray-500 text-xs md:text-sm">
         <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
             <div class="font-semibold text-brand-dark">EasyExit <span class="font-normal text-gray-500">Entrümpelung</span></div>
             <div class="flex flex-wrap justify-center gap-4">
-                <a href="#" class="hover:text-brand-dark transition">Impressum</a>
-                <a href="#" class="hover:text-brand-dark transition">Datenschutz</a>
+                <!-- Links zum Aufklappen -->
+                <a href="javascript:void(0)" onclick="toggleSection('impressum-section')" class="hover:text-brand-dark transition">Impressum</a>
+                <a href="javascript:void(0)" onclick="toggleSection('datenschutz-section')" class="hover:text-brand-dark transition">Datenschutz</a>
             </div>
             <div>© 2026 EasyExit. Standort: Maintal.</div>
         </div>
@@ -579,6 +635,17 @@
             const icon = element.querySelector('svg');
             answer.classList.toggle('active');
             icon.classList.toggle('rotate-180');
+        }
+
+        // Footer Legal Section Toggle (NEU)
+        function toggleSection(id) {
+            const section = document.getElementById(id);
+            section.classList.toggle('active');
+            
+            // Sanft nach unten scrollen zum Anfang des Textes, wenn geöffnet
+            if(section.classList.contains('active')) {
+                section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
         }
     </script>
 </body>
